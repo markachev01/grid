@@ -1,0 +1,165 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(13, [col] 80px);
+    grid-template-rows: repeat(4, [row] 80px);
+    justify-content: center;
+
+    grid-gap: 1rem;
+}
+
+.grid-item__image {
+    width: 100%;
+    height: 100%;
+}
+
+.item1 {
+    background-image: url(../img/02.jpg);
+
+    grid-area: 1 / 1 / span 2 / span 2;
+}
+
+.item2 {
+    background-image: url(../img/03.jpg);
+
+    grid-area: 1 / 3;
+}
+
+.item3 {
+    background-image: url(../img/1616099466_14-p-krasivaya-arkhitektura-19.jpg);
+
+    grid-area: 2 / 3;
+}
+
+.item4 {
+    background-image: url(../img/1650627184_31-sportishka-com-p-krasivaya-arkhitektura-krasivo-foto-42.jpg);
+
+    grid-area: 3 / 1;
+}
+
+.item5 {
+    background-image: url(../img/2285274_original.jpg);
+
+    grid-area: 4 / 1;
+}
+
+.item6 {
+    background-image: url(../img/caption.jpg);
+
+    grid-area: 3 / 2 / span 2 / span 2;
+}
+
+.item7 {
+    background-image: url(../img/images.jfif);
+
+    grid-area: 1 / 4;
+}
+
+.item8 {
+    background-image: url(../img/images\ \(1\).jfif);
+
+    grid-area: 1 / 5;
+}
+
+.item9 {
+    background-image: url(../img/images\ \(2\).jfif);
+
+    grid-area: 2 / 4 / span 2 / span 2;
+}
+
+.item10 {
+    background-image: url(../img/photo0jpg.jpg);
+
+    grid-area: 4 / 4;
+}
+
+.item11 {
+    background-image: url(../img/Без\ названия.jfif);
+
+    grid-area: 4 / 5;
+}
+
+.item12 {
+    background-image: url(../img/Без\ названия\ \(1\).jfif);
+
+    grid-area: 1 / 6 / span 4 / span 4;
+}
+
+.item13 {
+    background-image: url(../img/Без\ названия\ \(2\).jfif);
+
+    grid-area: 1 / 10 / span 2 / span 2;
+}
+
+.item14 {
+    background-image: url(../img/Без\ названия\ \(3\).jfif);
+
+    grid-area: 3 / 10 / span 2 / span 2;
+}
+
+.item15 {
+    background-image: url(../img/Без\ названия\ \(4\).jfif);
+
+    grid-area: 1 / 12;
+}
+
+.item16 {
+    background-image: url(../img/Без\ названия\ \(5\).jfif);
+
+    grid-area: 1 / 13;
+}
+
+.item17 {
+    background-image: url(../img/Без\ названия\ \(6\).jfif);
+
+    grid-area: 2 / 12;
+}
+
+.item18 {
+    background-image: url(../img/красивая-архитектура-в-городе-киева-осени-130905108.jpg);
+
+    grid-area: 2 / 13;
+}
+
+.item19 {
+    background-image: url(../img/красивые-разноцветные-дома-старой-европейской-архитектуры-я-в-центре-193692129.jpg);
+
+    grid-area: 3 / 12 / span 2 / span 2;
+}
+
+.animation {
+    text-align: center;
+}
+
+.animation-button {
+    width: 100px;
+    height: 50px;
+
+    border-radius: 5px;
+    background-color: aqua;
+}
+
+.animation-button:hover {
+    animation-name: anim1;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes anim1 {
+    0% { 
+        transform: rotate(-5deg); 
+    }
+    25% {
+         transform: rotate(5deg); 
+    }
+    50% {
+         transform: rotate(-5deg); 
+    }
+    75% {
+         transform: rotate(5deg); 
+    }
+    100% {
+         transform: rotate(-5deg); 
+    }
+  }
